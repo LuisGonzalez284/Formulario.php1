@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+ 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Registro al webinar  Gonzalez Martinez Luis Enrique </title>
+  </head>
+  
+ <body>
+ <h1>Formulario de Registro para el webinar</h1>
+ <form action="procesador_webnar.php" method="POST">
+  
+<label for="nombre">Nombre Completo</label> 
+<input type="text" id="nombre" name="nombre" required> <br> <br>
+
+<label for="correo">Correo electronico</label>
+<input type="email" id="correo" name="correo" required><br> <br>
+
+<label for="telefono">Telefono:</label> 
+<input type="text" id="telefono" name="telefono" required><br> <br>
+ 
+<label>¿Como te enteraste del webinar?</label><br>
+<input type="radio" id="email" name="fuente" value="email" required>
+<label for="email">Email</label>
+
+<input type="radio" id="redes" name="fuente" value="Amigo" required>
+<label for="Amigo">Amigo</label><br>
+<input type="radio">
+
+<label for="temas_interes">Tema de Interes:</label><br>
+<select id="temas_interes" name="temas_interes []" multiple required>
+<option value="Tecnologia">Tecnologia</option>
+<option value="Educacion">Educacion</option>
+<option value="Salud">Salud</option>
+<option value="Negocios">Negocios</option>
+</select> <br> <br>
+
+<label>Opciones de Participacion:</label><br>
+<input type="checkbox" id="certificado" name="opciones []" value="Certificado">
+<label for="certificado">Deseo recibir un Certificadp</label><br>
+<input type="checkbox" id="grabacion" name="opciones []" value="Grabacion">
+<label for="grabacion">Deseo recibir la grabacion</label><br><br>
+
+<label for="comentarios">Comentarios o preguntas:</label><br>
+<textarea id="comentarios" name="comentarios" rows="4" cols="50"> textarea</textarea><br>
+
+<input type="submit" value="Registrarse">
+ </form>   
+ </body> 
+</html>
